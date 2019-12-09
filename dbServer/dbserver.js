@@ -30,7 +30,7 @@ app.get('/getMovies', function(req,res){
     let vote_avg = req.query.vote_avg;
     let budget = req.query.budget;
     let original_language = req.query.original_language;
-    let query = 'SELECT * FROM detailsTable WHERE '
+    let query = 'SELECT * FROM detailsMoviesTable2 WHERE '
     if (title !== undefined){
         query = query + 'title = \'' + title + '\';'
     }
