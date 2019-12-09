@@ -16,11 +16,11 @@
       </b-form-group>
 
       <b-form-group id="input-group-3" label="Original Language:" label-for="input-3" :invalid-feedback="invalidFeedback">
-        <b-form-input id="input-3" v-model="form.original_language" placeholder="Enter genre"> </b-form-input>
+        <b-form-input id="input-3" v-model="form.original_language" placeholder="Enter original language"> </b-form-input>
       </b-form-group>
 
       <b-form-group id="input-group-3" label="Budget:" label-for="input-3" :invalid-feedback="invalidFeedback">
-        <b-form-input id="input-3" v-model="form.budget" placeholder="Enter genre"> </b-form-input>
+        <b-form-input id="input-3" v-model="form.budget" placeholder="Enter budget"> </b-form-input>
       </b-form-group>
 
       <b-button type="submit" variant="primary">Submit</b-button>
