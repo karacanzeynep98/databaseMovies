@@ -4,8 +4,17 @@ Movies are an essential component of the intellectual human experience. We escap
 We started off with this problem. We decided to implement a search interface for movies. We chose the most commonly discussed parameters: title, popularity, vote average, original language and budget. Our search engine allows you to search any movie from the IMDB database based on the aforementioned parameters. 
 
 # How to Run 
-In order to run this website, go to the directory that stores dbserver.js. Then run in terminal node dbserbver.js. It may
-ask to install ... 
+In order to run this website, there are a few steps:
 
-Then run npm run serve on the folder that holds ...
+1) Clone/download the github repo on your computer.
+2) Go to dbUI folder. Run "npm run serve" in terminal.
+3) Go to dbServer folder. Run "node dbserver.js"
+4) Go to dbData folder. Extract/download csv files. (If you've already downloaded, make sure you change the path to the correct folder)
+5) Go to dbSQL folder. There, you will find the SQL commands to run MySQL. We used an IDE called PopSQL to create the tables
+and fetch the data from csv tables. There is an example database that we created called "giraffe" and there is a screenshot of 
+credentials of giraffe database. You can create your own database, but make sure once you get the data csv tables you change the path to be able to load the tables to the database.
+
+# Details
+For further details, see the group project report.
+
 
