@@ -29,22 +29,22 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
-CREATE TABLE detailsMoviesTable (
+CREATE TABLE detailsMoviesTable2 (
     id INT PRIMARY KEY,
     adult BOOLEAN,
-    overview VARCHAR(255),
+    overview VARCHAR(1000),
     original_language VARCHAR(255),
     title VARCHAR(255)
 );
 
 LOAD DATA LOCAL INFILE '/Users/zeynepkaracan/Desktop/details_table_new.csv' 
-INTO TABLE detailsMoviesTable
+INTO TABLE detailsMoviesTable2
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
 
-SELECT * FROM detailsMoviesTable;
+SELECT * FROM detailsMoviesTable2;
 SELECT * FROM budgetTable;
 SELECT * FROM votesTable;
