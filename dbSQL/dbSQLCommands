@@ -1,0 +1,50 @@
+
+CREATE TABLE votesTable (
+    id INT NOT NULL,
+    imdb_id VARCHAR(255) NOT NULL,
+    popularity DECIMAL(10, 2) NOT NULL,
+    vote_average DECIMAL(2,1) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+LOAD DATA LOCAL INFILE '/Users/zeynepkaracan/Desktop/vote_table.csv' 
+INTO TABLE votesTable
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+
+CREATE TABLE budgetTable (
+    id INT PRIMARY KEY,
+    budget INT,
+    revenue INT
+);
+
+
+LOAD DATA LOCAL INFILE '/Users/zeynepkaracan/Desktop/budget_table.csv' 
+INTO TABLE budgetTable
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+CREATE TABLE detailsMoviesTable (
+    id INT PRIMARY KEY,
+    adult BOOLEAN,
+    overview VARCHAR(255),
+    original_language VARCHAR(255),
+    title VARCHAR(255)
+);
+
+LOAD DATA LOCAL INFILE '/Users/zeynepkaracan/Desktop/details_table_new.csv' 
+INTO TABLE detailsMoviesTable
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+
+SELECT * FROM detailsMoviesTable;
+SELECT * FROM budgetTable;
+SELECT * FROM votesTable;
